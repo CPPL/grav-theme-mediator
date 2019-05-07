@@ -1,0 +1,21 @@
+{% set socialButtons = theme_config.social_buttons %}
+<div class="custom-links">
+    {% for social in socialButtons %}
+        {{ dump(social) }}
+        {% if social.url %}
+            {% if social.btn == 'noicon' %}
+                {{ dump(social.btn) }}
+                <a href="{{ social.url }}">
+                    <span class="socialTextLink">{{ social.url_title }}</span>
+                </a>
+            {% else %}
+            <a class="icon-{{ social.btn }}" href="{{ social.url }}" title="{{ social.url_title }}">
+                <i class="fa fa-{{ social.btn }}"></i>
+            </a>
+            {% endif %}
+            {% if social != (socialButtons | last) %}
+            &nbsp;&nbsp;·&nbsp;&nbsp;
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>

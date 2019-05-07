@@ -1,0 +1,12 @@
+<section class="share">
+    {% for social in theme_config.social %}
+        {% if social.share_url  %}
+            {{ dump(social) }}
+            {% set shareText = (page.title ~ ' ' ~social.share_via) %}
+            <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{{ social.share_title }}{{ shareText|e('url') }}{{ social.share_link }}{{page.url(true)|e('url')}}"
+               onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
+                <i class="fa fa-{{ social.icon }}"></i><span class="hidden">{{ social.icon }}</span>
+            </a>
+        {% endif %}
+    {% endfor %}
+</section>
