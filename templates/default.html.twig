@@ -14,22 +14,12 @@
     </div>
 
     <header class="blog-header">
-        {% if site.logo %}
-          <a class="blog-logo" href="{{ base_url_relative}}" style="background-image: url({{ base_url_relative }}{{ site.logo }})">{{ site.title }}</a>
+        {% if logoURL %}
+          <a class="blog-logo" href="{{ base_url_absolute }}" style="background-image: url({{ logoURL }})">{{ site.title }}</a>
         {% endif %}
         <h1 class="blog-title">{{ site.title }}</h1>
         <h2 class="blog-description">{{ site.description }}</h2>
-        <div class="custom-links">
-          {% for social in site.social %}
-            {% if social.url %}
-                <a class="icon-{{ social.icon }}" href="{{ social.url }}">
-                  <i class="fa fa-{{ social.icon }}"></i>
-                </a>
-                &nbsp;&nbsp;·&nbsp;&nbsp;
-            {% endif %}
-          {% endfor %}
-          <a href="{{ base_url_relative }}/about">About</a>
-        </div>
+        {% include 'partials/social.html.twig' %}
     </header>
 
     <main class="content" role="main">

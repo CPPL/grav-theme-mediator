@@ -14,3 +14,100 @@ license: MIT
 
 form:
   validation: loose
+  fields:
+
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        social:
+          type: tab
+          title: THEME_MEDIATOR.SOCIAL
+          fields:
+            relme:
+              type: text
+              label: THEME_MEDIATOR.PRIMARY_RELME_LABEL
+              help: THEME_MEDIATOR.PRIMARY_RELME_HELP
+              placeholder: THEME_MEDIATOR.PRIMARY_RELME_HINT
+            relmealt:
+              type: text
+              label: THEME_MEDIATOR.ALTERNATE_RELME_LABEL
+              help: THEME_MEDIATOR.ALTERNATE_RELME_HELP
+              placeholder: THEME_MEDIATOR.PRIMARY_RELME_HINT
+            social_buttons:
+              name: social
+              type: list
+              collapsed: false
+              style: vertical
+              label: THEME_MEDIATOR.SOCIAL_BUTTONS
+              fields:
+                .btn:
+                  type: select
+                  size: medium
+                  label: THEME_MEDIATOR.ICON
+                  options:
+                    'bitbucket': THEME_MEDIATOR.BITBUCKET
+                    'dribble': THEME_MEDIATOR.DRIBBLE
+                    'facebook': THEME_MEDIATOR.FACEBOOK
+                    'flickr': THEME_MEDIATOR.FLICKR
+                    'github': THEME_MEDIATOR.GITHUB
+                    'instagram': THEME_MEDIATOR.INSTAGRAM
+                    'link': THEME_MEDIATOR.LINK
+                    'linkedin': THEME_MEDIATOR.LINKEDIN
+                    'medium': THEME_MEDIATOR.MEDIUM
+                    'comment': THEME_MEDIATOR.MICROBLOG
+                    'pinterest': THEME_MEDIATOR.PINTEREST
+                    'twitter': THEME_MEDIATOR.TWITTER
+                    'noicon': THEME_MEDIATOR.NOICON
+                .url_title:
+                  type: text
+                  size: medium
+                  label: THEME_MEDIATOR.SOCIAL_URL_TITLE
+                  help: THEME_MEDIATOR.SOCIAL_URL_TITLE_HELP
+                  placeholder: 'e.g. Our Twitter account'
+                .url:
+                  type: text
+                  size: medium
+                  label: THEME_MEDIATOR.SOCIAL_URL
+                  help: THEME_MEDIATOR.SOCIAL_URL_HELP
+                  placeholder: 'e.g. https://twitter.com/cpplaus'
+                .share_url:
+                  type: text
+                  size: medium
+                  label: THEME_MEDIATOR.SHARE_URL
+                  help: THEME_MEDIATOR.SHARE_URL_HELP
+                  placeholder: THEME_MEDIATOR.SHARE_URL_HINT
+                .share_title:
+                  type: text
+                  size: medium
+                  label: THEME_MEDIATOR.SHARE_TITLE
+                  help: THEME_MEDIATOR.SHARE_TITLE_HELP
+                  placeholder: THEME_MEDIATOR.SHARE_TITLE_HINT
+                .share_link:
+                  type: text
+                  size: medium
+                  label: THEME_MEDIATOR.SHARE_LINK
+                  help: THEME_MEDIATOR.SHARE_LINK_HELP
+                  placeholder: THEME_MEDIATOR.SHARE_LINK_HINT
+
+        general:
+          type: tab
+          title: THEME_MEDIATOR.GENERAL
+          fields:
+            site_logo:
+              type: file
+              label: THEME_MEDIATOR.SITE_LOGO
+              help: THEME_MEDIATOR.SITE_LOGO_HELP
+              destination: 'theme://images'
+              multiple: false
+              accept:
+                - image/*
+            site_favicon:
+              type: file
+              label: THEME_MEDIATOR.SITE_FAVICON
+              help: THEME_MEDIATOR.SITE_FAVICON_HELP
+              destination: 'theme://images'
+              multiple: false
+              accept:
+                - image/*

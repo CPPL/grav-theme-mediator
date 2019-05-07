@@ -1,0 +1,18 @@
+Title: Post
+'@extends':
+  type: default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        content:
+          type: tab
+          title: PLUGIN_ADMIN.CONTENT
+          fields:
+            header.image:
+              type: pagemediaselect
+              label: Post Banner Image
+              help: Select image you want to show as the posts banner image (n.b. you must upload it first)

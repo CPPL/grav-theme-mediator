@@ -1,0 +1,36 @@
+en:
+  THEME_MEDIATOR:
+    ALTERNATE_RELME_LABEL: 'Alternate Primary "rel=me" Link'
+    ALTERNATE_RELME_HELP: The link to insert an alternate `rel="me"` link into the page header. If the first relme is blank or this one is blank it will be skipped.
+    GENERAL: General
+    PRIMARY_RELME_LABEL: 'Primary "rel=me" Link'
+    PRIMARY_RELME_HELP: The link to insert a `rel="me"` link into the page header. If blank it will be skipped.
+    PRIMARY_RELME_HINT: "https://my.indieweb.domain/myname"
+    SITE_FAVICON: "Favicon"
+    SITE_FAVICON_HELP: "Favicon are the small images that are associated with a website, usually today they appear in browser tabs. Generally these days any suitable square PNG file will work."
+    SITE_LOGO: 'Site Logo'
+    SITE_LOGO_HELP: 'This image is used in the `icon` links to define a "favicon" and "apple-touch-icon" in the templates header.'
+    SOCIAL: 'Social Settings'
+    SHARE_URL: 'Sharing URL'
+    SHARE_URL_HELP: 'The URL to the social networks sharing mechanism.'
+    SHARE_URL_HINT: 'http://twitter.com/share'
+    SOCIAL_BUTTONS: 'Social Buttons'
+    SOCIAL_URL: 'Social Link'
+    SOCIAL_URL_HELP: 'The URL to use for this social button.'
+    SOCIAL_URL_TITLE: 'Link Title'
+    SOCIAL_URL_TITLE_HELP: 'Title text for the social button (not show but used by assistive devices)'
+    ICON: 'Icon'
+    NOICON: 'No Icon (use Title)'
+    BITBUCKET: 'Bitbucket'
+    DRIBBLE: 'Dribble'
+    FACEBOOK: 'Facebook'
+    FLICKR: 'Flickr'
+    GITHUB: 'Github'
+    INSTAGRAM: 'Instagram'
+    LINK: 'Link (generic)'
+    LINKEDIN: 'LinkedIn'
+    MEDIUM: 'Medium'
+    MICROBLOG: 'Micro.blog'
+    PINTEREST: 'Pinterest'
+    TWITTER: 'Twitter'
+
