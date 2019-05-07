@@ -1,0 +1,30 @@
+.logo-readium {
+  background: none;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 281px;
+  max-height: 562px;
+}
+
+.post {
+  .post-content{
+    .credit {
+      font-size: 0.9em;
+      font-style: italic;
+    }
+  }
+}
+
+.ads {
+  float: right;
+  padding-left: 0.76em;
+  width: 120px;
+  height: auto;
+}
+
+video {
+  width: 100%;
+}
